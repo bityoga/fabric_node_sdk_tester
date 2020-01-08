@@ -10,7 +10,8 @@ const path = require('path');
 const ccpPath = path.resolve(__dirname, '.', 'network_profile.json');
 
 const user_name = "lion";
-const password = "lion";
+const user_password = "lion";
+const user_role = "client";
 
 async function main() {
     try {
@@ -51,11 +52,11 @@ async function main() {
 
 
         // Register the user, enroll the user, and import the new identity into the wallet.
-        const secret = await ca.register({ enrollmentID: user_name, role: 'client',enrollmentSecret:password }, adminIdentity);
+        const secret = await ca.register({ enrollmentID: user_name,role: user_role,enrollmentSecret:user_password }, adminIdentity);
         const enrollment = await ca.enroll({ enrollmentID: user_name, enrollmentSecret: secret });
         const userIdentity = X509WalletMixin.createIdentity('hlfMSP', enrollment.certificate, enrollment.key.toBytes());
         await wallet.import(user_name, userIdentity);
-        console.log('Successfully registered and enrolled admin user "user_name" and imported it into the wallet');
+        console.log('Successfully registered and enrolled user "'+user_name+'" with role "'+user_role+'" and imported it into the wallet');
 
     } catch (error) {
         console.error(`Failed to register user "user_name": ${error}`);
