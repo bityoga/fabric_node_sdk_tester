@@ -1,5 +1,5 @@
-# bityoga_hyperledger_fabric_node_sdk
-Node sdk examples to interact with bityoga fabric set up
+# hyperledger_fabric_node_sdk tester
+Node sdk test examples to interact with bityoga fabric set up
 
 # Requirements
   1. Bityoga fabric sdk should be up and running
@@ -9,7 +9,7 @@ Node sdk examples to interact with bityoga fabric set up
 
 # Run Instructions
   1. ## Clone this repository
-      - git clone https://github.com/anandhakumarpalanisamy/bityoga_hyperledger_fabric_node_sdk.git
+      - git clone https://github.com/bityoga/fabric_node_sdk_tester.git
       
   2. ## Run npm install
       - cd bityoga_hyperledger_fabric_node_sdk
