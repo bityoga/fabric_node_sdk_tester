@@ -1,4 +1,4 @@
-# Hyperledger Fabric Node_Sdk Tester
+# Hyperledger Fabric NodeSDK Tester
 Node sdk test examples to interact with bityoga fabric set up
 
 # Requirements
