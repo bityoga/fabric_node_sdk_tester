@@ -42,9 +42,9 @@
 
   "orderers": {
     "orderer": {
-      "url": "grpcs://164.90.214.237:8053",
+      "url": "grpcs://165.232.76.37:8053",
       "tlsCACerts": {
-        "path": "./hlft-store/hlfMSP/tlscacerts/tls-tlsca-7054.pem"
+        "path": "./hlft-store/tlsca/orderer/tls-msp/tlscacerts/tls-tlsca-7054.pem"
       },
       "grpcOptions": {
         "ssl-target-name-override": "orderer"
@@ -54,10 +54,10 @@
 
   "peers": {
     "peer2": {
-      "url": "grpcs://164.90.214.237:8055",
+      "url": "grpcs://165.232.76.37:8055",
 
       "tlsCACerts": {
-        "path": "./hlft-store/hlfMSP/tlscacerts/tls-tlsca-7054.pem"
+        "path": "./hlft-store/tlsca/peer2/tls-msp/tlscacerts/tls-tlsca-7054.pem"
       },
       "grpcOptions": {
         "ssl-target-name-override": "peer2"
@@ -67,7 +67,7 @@
   "certificateAuthorities": {
     "orgca": {
       "caName": "orgca",
-      "url": "https://164.90.214.237:8052",
+      "url": "https://165.232.76.37:8052",
       "httpOptions": {
         "verify": false
       }
@@ -75,7 +75,7 @@
 
     "tlsca": {
       "caName": "tlsca",
-      "url": "https://164.90.214.237:8081",
+      "url": "https://165.232.76.37:8081",
       "httpOptions": {
         "verify": false
       }
