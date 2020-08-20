@@ -24,9 +24,13 @@ Node sdk test examples to interact with bityoga fabric set up
   4.  ## Retrieve hyperledger fabric tls certificates of 'orderer' and 'peer2'
       #### (Replace ip address with your fabric prime manager's ip address)
 
-        - scp -r root@178.62.207.235:/root/hlft-store/orderer/tls-msp/tlscacerts/tls-tlsca-7054.pem ./hlft-store/orderer/tls-msp/tlscacerts/tls-tlsca-7054.pem
+        - scp -r root@178.62.207.235:/root/hlft-store/tlsca/orderer/tls-msp/tlscacerts/tls-tlsca-7054.pem ./hlft-store/tlsca/orderer/tls-msp/tlscacerts/tls-tlsca-7054.pem
 
-        - scp -r root@178.62.207.235:/root/hlft-store/peer2/tls-msp/tlscacerts/tls-tlsca-7054.pem ./hlft-store/peer2/tls-msp/tlscacerts/tls-tlsca-7054.pem
+        - scp -r /root/hlft-store/tlsca/peer2/tls-msp/tlscacerts/tls-tlsca-7054.pem ./hlft-store/tlsca/peer2/tls-msp/tlscacerts/tls-tlsca-7054.pem
+        
+        (or)
+        
+        - run shell script **" bash get_tls_certificates.sh "**
         
    5. ## Enroll admin
         - #### Command : node enrollAdmin.js
