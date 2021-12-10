@@ -9,7 +9,7 @@ Node sdk test examples to interact with bityoga fabric set up
 
 # Run Instructions
   1. ## Clone this repository
-      - git clone https://github.com/bityoga/fabric_node_sdk_tester.git
+      ```git clone https://github.com/bityoga/fabric_node_sdk_tester.git```
       
   2. ## Run npm install
       - cd fabric_node_sdk_tester
