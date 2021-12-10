@@ -13,9 +13,8 @@ Node sdk test examples to interact with bityoga fabric set up
       
   2. ## Run npm install
       - cd fabric_node_sdk_tester
-      - ####  Set node version
-          -  nvm use node v8.9.0   (using nvm)
-      - npm install
+      - **Set node version:** ```nvm use node v8.9.0``` (using nvm)
+      - ```npm install```
       
   3. ## Update ip address in 'network_profile.json'
       - update the url ip addresses of orderer, peer2, orgca, tlsca (4 places).
@@ -32,7 +31,7 @@ Node sdk test examples to interact with bityoga fabric set up
         scp -r root@LOCALHOST_OR_YOUR_MASTER_MACHINE_IP_ADDRESS:/root/hlft-store/tlsca/peer2/tls-msp/tlscacerts/tls-tlsca-7054.pem ./hlft-store/tlsca/peer2/tls-msp/tlscacerts/tls-tlsca-7054.pem
         ```
         
-        **(or)**
+       #### (or)
         
         **run shell script:** ```bash get_tls_certificates.sh```
         
