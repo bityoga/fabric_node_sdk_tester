@@ -31,9 +31,9 @@ Node sdk test examples to interact with bityoga fabric set up
         scp -r root@LOCALHOST_OR_YOUR_MASTER_MACHINE_IP_ADDRESS:/root/hlft-store/tlsca/peer2/tls-msp/tlscacerts/tls-tlsca-7054.pem ./hlft-store/tlsca/peer2/tls-msp/tlscacerts/tls-tlsca-7054.pem
         ```
         
-       #### (or)
-        
-        **run shell script:** ```bash get_tls_certificates.sh```
+       #### (Or run shell script)
+       
+       ```bash get_tls_certificates.sh```
         
    5. ## Enroll admin
         #### Command : ```node enrollAdmin.js```
